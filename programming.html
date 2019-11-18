@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programming</title>
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Quicksand:300|Raleway:100&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="portfolio.css">
+    <link type="text/css" rel="stylesheet" href="programming.css">
+    <script src="jquery_library.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html"><img id="logo" src="logo.png"></a>
+            <ul>
+                <li><a href="about.html" class="sidebar">About</a></li>
+                <li id="uxui" ><a class="sidebar">UX/UI</a></li>
+                        <ul class="submenu" style="display: none;">
+                            <li><a href="alamode.html" class="sidebar">Álamode</a></li>
+                            <li><a id="sidebarLast" href="logem.html" class="sidebar">log'em</a></li>
+                        </ul>
+                <li><a href="graphic.html" class="sidebar">Graphic</a></li>
+                <li><a href="programming.html" class="sidebar">Programming</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="content">
+        <main>
+            <h2>Programming Projects</h2>
+            <h3 id="firstTitle">The Boston Art Dealers Association Website</h3>
+           <p>
+                For a group project in Web Programming class, we redesigned the website of the Boston Art Dealers Association (BADA).<br \><br \>
+                I recognized that the current website of BADA is not very modern, and considering that the main audience of the website would be an art enthusiast, I realized that redesigning their website would be an interesting project.<br \><br \>
+                As a lead designer and a front-end developer, I <span id="hightlight">designed the look and feel</span> of the entire website and the <span id="hightlight">information architecture</span> of the website.<br \><br \>
+                I also successfully <span id="hightlight">implemented a 3D carousel</span> for the gallery page using CSS 3D, JavaScript, and jQuery animation that made the website much sleeker and more professional.
+           </p>
+           <h4>Images from the Website</h4>
+           <div id="BADA">
+               <img src="BADAhomepage.png" alt="">
+               <img src="BADAgallery.png" alt="">
+            </div>
+           <a id="button" class="button" href="https://hshih02.github.io/20midterm/index.html" target="_blank">View Project</a>
+           <h3>Immersive Art Experience</h3>
+           <p>
+                As an individual project, I am creating a program where users can <span id="hightlight">explore art exhibitions simply through eyegaze</span>.<br \><br \>
+                Most art gallery websites only allow users to click their art to access the information, so they fail to offer <span id="hightlight">immersive experiences</span>.<br \><br \>
+                I think allowing users to view different artworks only by gazing at different directions can not only allow new interactions with online galleries but also give new opportunities for users who cannot use their limbs.<br \><br \>
+                I am implementing this program with Webgazer.js, jQuery, HTML, CSS, and JavaScript.
+           </p>
+           <h3 id="middleTitle">Aiden's Music Chart</h3>
+           <p>
+                As an individual project in Web Programming class, I created a website where users can <span id="hightlight">search relevant songs by querying keywords</span>, name of artists, or any other information.<br \><br \>
+                I implemented this program by using jQuery, HTML, CSS, and JavaScript and successfully connecting my program with <span id="hightlight">Deezer API</span>.
+           </p>
+           <div id="musicChart"><img src="musicChart.png" alt=""></div>
+           <a id="button" class="button" href="https://aidenkang99.github.io/musicchart/home.html" target="_blank">View Project</a>
+           <h3>The Grep</h3>
+           <p>
+                As a final project for Data Structures class, I designed and built a program that <span id="hightlight">efficiently indexes all words in files within a directory</span>.<br \><br \>
+                I used <span id="hightlight">a dynamic hash table of linked lists in C++</span> to handle search queries much faster than the reference implementation made by the course TA.<br \><br \>
+                I am happy to talk about these projects if you need more information.
+           </p>
+        </main>
+    </div>
+
+</body>
+<script type="text/javascript" src="submenu.js"></script>
+</html>

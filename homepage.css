@@ -1,0 +1,134 @@
+main{
+    position: absolute;
+}
+
+p{
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    width: 350px;
+    font-size: 12pt;
+    /* removing settings from portfolio.css */
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+p:nth-child(1){
+    margin-top: 480px;
+}
+
+nav{
+    top: 100px;
+    float: left;
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+nav ul{
+    width: 150px;
+    flex-direction: column;
+    height: 300px;
+    margin-right: -50px;
+}
+
+nav li{
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+nav li a{
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    color: #000;
+
+}
+
+nav li a{
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.dumbo{
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 870px;
+    top: 40px;
+    margin-left: 380px;
+    margin-right: -100px;
+    float: right;
+    z-index: 0;
+    
+}
+
+#dumbo{
+    width: 780px;
+    z-index: 0;
+}
+
+.frame{
+    border: 2px solid #000;
+    position: absolute;
+    width: 700px;
+    height: 1020px;
+    top: 50px;
+    left: 110px;
+    z-index: -1;
+}
+
+.brush{
+    border: 1px solid #000;
+    position: absolute;
+    width: 100px;
+    margin-top: 750px;
+}
+
+.submenu{
+    margin-top: 20px;
+    height: 100px;
+    line-height: 40px;
+}
+
+nav{
+    top: 100px;
+    position: relative;
+    float: right;
+    margin-right: 140px;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+h3{
+    margin-top: 0px;
+    font-size: 22pt;
+    font-family: serif;
+}
+
+#signature{
+    font-family: 'Lato', cursive;
+    font-size: 12pt;
+    font-weight: 1000;
+    position: absolute;
+    margin-top: 1035px;
+    color: #fff;
+    margin-left: 1000px;
+}
+
+.submenu{
+    padding-top: 2px;
+    height: 100px;
+    margin-left: -20px;
+    margin-right: 0px;
+}
+
+.sidebar::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    transition: width .5s;
+    margin-top: 6px;
+}

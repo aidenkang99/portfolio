@@ -1,0 +1,74 @@
+p{
+    width: 800px;
+}
+
+#button{
+    display: block;
+    border: 1px solid #000;
+    margin-left: 700px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    transition-timing-function: ease-in-out;
+    font-family: 'Quicksand', sans-serif;
+
+
+}
+
+#button:hover{
+    transition: padding 0.5s;
+    padding: 10px;
+}
+
+#button:visited{
+    text-decoration: none;
+    color: #000;
+}
+
+#content{
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+img{
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+#BADA{
+    text-align: right;
+}
+
+#musicChart{
+    text-align: center;
+}
+
+h4{
+    margin-top: 0px;
+    font-size: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+h2{
+    font-family: serif;
+    font-size: 40pt;
+}
+
+#firstTitle{
+    margin-top: 100px;
+}
+
+#middleTitle{
+    margin-top: 150px;
+}
+
+h3{
+    margin-top: 0px;
+    font-size: 30pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}

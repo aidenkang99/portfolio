@@ -1,0 +1,134 @@
+html{
+    background-color: #fff;
+    color: #000;
+    position: relative;
+}
+
+body{
+    width: 1225px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+h2, h1{
+    display: inline;
+    font-family: 'Yeseva One', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+}
+
+h3{
+    margin-top: 0px;
+    font-size: 35pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+h2{
+    font-size: 94pt;
+    font-weight: 50;
+}
+
+h1{
+    margin-left: 40px;
+    font-size: 92pt;
+    color: #fff;
+    font-weight: 500;
+}
+
+#title{
+    position: absolute;
+    margin-top: 250px;
+    z-index: 3;
+}
+
+.container{
+    float: left;
+}
+
+nav{
+    top: 100px;
+    position: fixed;
+    float: left;
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+nav ul{
+    flex-direction: column;
+    height: 300px;
+}
+
+nav li{
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+nav li a{
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    color: #000;
+
+}
+
+#hightlight{    
+    background-size: 200% auto; 
+    background-image: linear-gradient(to right,#fff 50%, #ffff00 50%);
+    background-position: 0% 0;
+
+    animation-name: highlight;
+    animation-duration: 1.2s;
+    animation-delay: 0.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;    
+}
+
+@keyframes highlight {
+    from {background-position: 0% 0;}
+    to {background-position: -100% 0;}
+}
+
+#logo{
+    margin-left: 50px;
+    width: 100px;
+    margin-bottom: 50px;
+}
+
+.sidebar::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #000;
+    transition: width .5s;
+    margin-top: 6px;
+}
+
+.sidebar:hover::after {
+    width: 100px;
+    transition: width .5s;
+}
+
+.submenu .sidebar::after{
+    margin-top: 10px;
+}
+
+p{
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.submenu{
+    padding-top: 2px;
+    height: 100px;
+    margin-left: -20px;
+    margin-right: 350px;
+}
+
+.submenu li{
+    line-height: 10px;
+}

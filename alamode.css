@@ -1,0 +1,107 @@
+#mockup{
+    max-width: 250px;
+    height: auto;
+    width: auto;
+    float: left;
+    margin-right: 60px;
+}
+
+#mockupDiv:nth-child(2){
+    margin-right: 0px
+}
+
+#mockupDiv{
+    margin-top: 100px;
+    float: right;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 200px;
+}
+
+h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15pt;
+    position: static;
+    display: block;
+}
+
+#title{
+    position: static;
+    margin-top: 70px;
+    display: inline-block;
+
+}
+
+#jobTitle{
+    display: inline;
+    margin-left: 100px;
+    margin-bottom: 1500px;
+}
+
+#alamodeLogo{
+    width: 400px;
+}
+
+#jobTitleDiv{
+    display: inline-block;
+    margin-top: 145px;
+    position: absolute;
+}
+
+#personaPic{
+    text-align: right;
+    margin-bottom: 90px;
+}
+
+#persona{
+    width: 80%;
+}
+
+#wireframePic, #prototypePic{
+    text-align: center;
+}
+
+#wireframePic{
+    margin-top: -50px;
+    margin-bottom: 100px;
+}
+
+p{
+    width: 800px;
+}
+
+.prototype{
+    width: 600px;
+}
+
+#button{
+    display: block;
+    border: 1px solid #000;
+    margin-left: 700px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    transition-timing-function: ease-in-out;
+    font-family: 'Quicksand', sans-serif;
+
+
+}
+
+#button:hover{
+    transition: padding 0.5s;
+    padding: 10px;
+}
+
+#button:visited{
+    text-decoration: none;
+    color: #000;
+}
+
+#content{
+    margin-left: 300px;
+}

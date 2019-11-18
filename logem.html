@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>log'em</title>
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Quicksand:300|Raleway:100&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="portfolio.css">
+    <link type="text/css" rel="stylesheet" href="logem.css">
+    <script src="jquery_library.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html"><img id="logo" src="logo.png"></a>
+            <ul>
+                <li><a href="about.html" class="sidebar">About</a></li>
+                <li id="uxui" ><a class="sidebar">UX/UI</a></li>
+                        <ul class="submenu" style="display: none;">
+                            <li><a href="alamode.html" class="sidebar">Álamode</a></li>
+                            <li><a id="sidebarLast" href="logem.html" class="sidebar">log'em</a></li>
+                        </ul>
+                <li><a href="graphic.html" class="sidebar">Graphic</a></li>
+                <li><a href="programming.html" class="sidebar">Programming</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="mockupDiv">
+        <img id="mockup" src="logemLogoPage.png" alt="">
+        <img id="mockup" src="logemMainPage.png" alt="">
+        <img id="mockup" src="logemEmotionPage.png" alt="">
+    </div>
+    <div id="content">
+        <div id="title">
+            <img id="logemLogo" src="logemLogo.png" alt="">
+        </div>
+        <div id="jobTitleDiv">
+            <h2 id="jobTitle">UX Engineer</h2>
+        </div>
+        <main>
+            <p>
+                At the Tufts Polyhack 2019, I came up with an idea of an application that tracks users emotions through wearables and displays the data on a map.<br \><br \>
+                ​After <span id="hightlight">winning the UI/UX category</span>, I decided to implement this idea in <span id="hightlight">Human-Computer Interaction Lab</span> at Tufts University with Professor Robert Jacob starting from Spring 2020.<br \><br \>
+                log’em would serve as <span id="hightlight">a personal diary of emotions</span> that would have been erased from your memory otherwise.
+                    ​
+            </p>
+            <h3>Inspiration</h3>
+            <p>
+                I was sitting in the school library, looking through other people’s Instagram feed, and I thought, “Wow, all these people are living a glamorous life, and I’m sitting here, in the library, for 4 hours, to figure out how to fix 19 errors in my program.<br \><br \>
+                And then, I looked through my past Instagram posts, and the person I saw in my posts was not someone who I consider myself to be. I looked like I’m having so much fun in life.<br \><br \>
+                <span id="hightlight">We use social media to display our own image that we wish other people to see.</span> When we look back through our feed, we often realize that our image displayed in social media doesn’t accurately depict us at all.<br \><br \>
+                On Instagram, some of us might look like social media influencers that are only here for ”positive vibes”; on twitter, some of us might look like monsters who have nothing but aggressive opinions.<br \><br \>
+                But our lives cannot be defined with one single emotion we want to display. If we choose not to record certain emotions, we are losing access to those parts of our lives.<br \><br \>
+            </p>
+            <h3>Vision</h3>
+            <p>
+                My mobile app, log’em, would capture every memorable moment in your life and create a journal for you automatically.<br \><br \>
+                log’em will remind you that <span id="hightlight">life is a mosaic of vibrant colors of emotions</span>, and every moment of your life has been worth remembering.
+            </p>
+            <h3>Technology</h3>
+            <p>
+                This product will use electrocardiogram (ECG) data that can be detected from smartwatches. According to a research published by the Institute of Electrical and Electronics Engineers, by using ECG data, we can extract heart rate variability (HRV) features based on time-domain, frequency-domain, and statistical analysis.<br \><br \>
+                Then, <span id="hightlight">HRV features could be classified into different emotional states</span> by using support vectors machine (SVM). Thereby, we can identify basic emotions (e.g. happy, sad, angry, scared, and relaxed).
+            </p>
+            <h3>UX Research Process</h3>
+            <p>
+                I used three user experience research methods (e.g. <span id="hightlight">empathy interview, empathy map, and card sorting</span>) to find out how users associate memory with space and how current social media apps make them feel.<br \><br \>
+                Based on the results from card sorting method, I organized information architecture in a way that would be highly intuitive for users.
+            </p>
+            <div id="logemResearchPic">
+                <img id="map" src="card.jpg" alt="">
+                <img id="interview" src="interview.png" alt="">
+                <img id="card" src="map.jpg" alt="">
+            </div>
+            <h3>Expected Outcome</h3>
+            <p>
+                An obvious benifit is that users can keep track of all their emotional experiences in life <span id="hightlight">without any effort</span> and are able to look back to reminisce later.<br \><br \>
+                But they could also use this as <span id="hightlight">a safety application.</span><br \><br \>
+                For example, when a number of users report fear at a certain location, an alert will pop up.
+            </p>
+            <div id="alertPic">
+                <img id="alert" src="alert.png" alt="">
+            </div>
+            <h3>Prototyping</h3>
+            <p>
+                By using Adobe XD and Illustrator, I created <span id="hightlight">an interactive prototype</span> of the application.<br \><br \>
+                Viewers can select which emotions they want to display and explore different privacy modes of the application.
+            </p>  
+            <div id="prototypePic">
+                <img class="prototype" src="logemPrototype.png" alt="">
+            </div>
+            <a id="button" class="button" href="https://xd.adobe.com/view/3da737a2-7ae6-4cba-44ea-7c5b16beda17-4b96/?fullscreen" target="_blank">View More</a>
+        </main>
+    </div>
+
+</body>
+<script type="text/javascript" src="submenu.js"></script>
+</html>

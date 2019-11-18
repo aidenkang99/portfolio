@@ -1,0 +1,134 @@
+
+h2{
+    font-family: serif;
+    font-size: 25pt;
+    position: static;
+    display: block;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+#title{
+    position: static;
+    margin-top: 70px;
+    display: inline-block;
+
+}
+
+p{
+    width: 800px;
+}
+
+
+
+main{
+    margin-left: 300px;
+}
+
+#cafe img{
+    width: 80%;
+    float: right;
+}
+
+#gwangalli img{
+    width: 60%;
+    margin-top: 300px;
+}
+
+#burgundy img{
+    width: 450px;
+    position: absolute;
+    margin-top: -1100px;
+    margin-left: 400px;
+}
+
+img{
+    margin-bottom: 150px;
+}
+
+#galleryProfile{
+    text-align: center;
+}
+
+#galleryProfile img{
+    width: 600px;
+    margin-top: 50px;
+}
+
+#rose{
+    text-align: center;
+}
+
+#rose img{
+    width:500px;
+    margin-top: 50px;
+}
+
+#mosaic img{
+    float: left;
+    width: 60%;
+    margin-top: 100px;
+}
+
+.brush{
+    border: 0.5px solid #000;
+    position: absolute;
+}
+
+#brush1{
+    width: 200px;
+    margin-top: 530px;
+    margin-left: 800px;
+}
+
+#brush2{
+    width: 100px;
+    margin-top: -950px;
+    margin-left: -50px;
+}
+
+#brush3{
+    width: 0px;
+    height: 100px;
+    margin-top: -950px;
+    margin-left: -50px;
+}
+
+#brush4{
+    width: 0px;
+    height: 100px;
+    margin-top: -600px;
+    margin-left: 900px;
+}
+
+#brush5{
+    width: 100px;
+    height: 0px;
+    margin-top: -500px;
+    margin-left: 800px;
+}
+
+#brush6{
+    width: 0px;
+    height: 300px;
+    margin-top: -450px;
+    margin-left: 825px;
+}
+
+#brush7{
+    height: 200px;
+    margin-top: -350px;
+    margin-left: 150px;
+}
+
+#brush8{
+    width: 200px;
+    margin-top: 50px;
+}
+
+#brush9{
+    width: 0;
+    height: 200px;
+    margin-top: 630px;
+    margin-left: 600px;
+}

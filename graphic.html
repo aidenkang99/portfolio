@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Quicksand:300|Raleway:100&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="portfolio.css">
+    <link type="text/css" rel="stylesheet" href="design.css">
+    <script src="jquery_library.js"></script>
+    <title>Graphic Design</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html"><img id="logo"src="logo.png"></a>
+            <ul>
+                <li><a href="about.html" class="sidebar">About</a></li>
+                <li id="uxui" ><a class="sidebar">UX/UI</a></li>
+                        <ul class="submenu" style="display: none;">
+                            <li><a href="alamode.html" class="sidebar">Álamode</a></li>
+                            <li><a id="sidebarLast" href="logem.html" class="sidebar">log'em</a></li>
+                        </ul>
+                <li><a href="graphic.html" class="sidebar">Graphic</a></li>
+                <li><a href="programming.html" class="sidebar">Programming</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div class="small">
+            <div class="carousel">
+                <div id="first" class="carouselCell"> <img id="image0" class="art" src="#"></div>
+                <div id="second" class="carouselCell"> <img id="image1" class="art" src="#"></div>
+                <div id="third" class="carouselCell"> <img id="image2" class="art" src="#"></div>
+                <div id="fourth" class="carouselCell"> <img id="image3" class="art" src="#"></div>
+                <div id="fifth" class="carouselCell"> <img id="image4" class="art" src="#"></div>
+            </div>
+        </div>
+        <div class="directionButtons">
+            <button class="direction" id="previous">Previous</button>
+            <button class="direction" id="next">Next</button>
+        </div>
+        <h1 id="name">&nbsp;</h1> <!-- Title -->
+        <div id="content">
+            <p id="info">
+                &nbsp;
+                <!-- Description -->
+            </p>
+        </div>
+    </main>
+</body>
+<script type="text/javascript" src="design.js"></script>
+<script type="text/javascript" src="submenu.js"></script>
+</html>

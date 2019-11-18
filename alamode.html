@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Álamode</title>
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Quicksand:300|Raleway:100&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="portfolio.css">
+    <link type="text/css" rel="stylesheet" href="alamode.css">
+    <script src="jquery_library.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html"><img id="logo" src="logo.png"></a>
+            <ul>
+                <li><a href="about.html" class="sidebar">About</a></li>
+                <li id="uxui" ><a class="sidebar">UX/UI</a></li>
+                        <ul class="submenu" style="display: none;">
+                            <li><a href="alamode.html" class="sidebar">Álamode</a></li>
+                            <li><a id="sidebarLast" href="logem.html" class="sidebar">log'em</a></li>
+                        </ul>
+                <li><a href="graphic.html" class="sidebar">Graphic</a></li>
+                <li><a href="programming.html" class="sidebar">Programming</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="mockupDiv">
+        <img id="mockup" src="logoPage.png" alt="">
+        <img id="mockup" src="mainPage.png" alt="">
+        <img id="mockup" src="feedPage.png" alt="">
+    </div>
+    <div id="content">
+        <div id="title">
+            <img id="alamodeLogo" src="alamodeLogo.png" alt="">
+        </div>
+        <div id="jobTitleDiv">
+            <h2 id="jobTitle">UI/UX Designer</h2>
+        </div>
+        <main>
+            <p>
+                I created <span id="hightlight">a high-fidelity prototype of a mobile application</span> that allows users to <span id="hightlight">search cool outfits based on machine learning.</span><br \><br \>
+                Users can swipe each outfit based on their preferences, and the system uses machine learning to suggest outfits that would fit the user's style much more accurately.<br \><br \>
+                Users can also type certain keywords to look for outfits that they are looking for. The app also automatically creates a "lookbook" that contains pictures of their favorite outfits. 
+            </p>
+            <h3>UX Research Process</h3>
+            <p>
+                    I have conducted UX research methods such as <span id="hightlight">persona modeling, empathy map, and concept model process</span> to examine potential users’ wants and needs. <br \><br \>
+                    This process helped me how to organize information in my application in a way that would be intuitive to the users. Especially, because most similar applications in the fashion industry do not have the “lookbook” functionality, I tried to gain more insight about the “lookbook” page through this research process.
+            </p>
+            <div id="personaPic">
+                <img id="persona" src="persona1.png" alt="">
+                <img id="persona" src="persona2.png" alt="">
+            </div>
+            <h3>Wireframing</h3>
+            <p>
+                <span id="hightlight">Based on the insight from Persona Modeling</span>, I added a functionality to my wireframe so that the user could create a lookbook by simply indicating their interests through swiping pictures.
+            </p>
+            <div id="wireframePic">
+                <img class="prototype" src="alamodeWireframe.jpeg" alt="">
+            </div>
+            <h3>Prototyping</h3>
+            <p>
+                    By using Adobe XD and Illustrator, I created <span id="hightlight">an interactive prototype</span> of the application. Viewers can swipe the pictures to indicate their interest and look at a mockup of a lookbook that will be created based on past records. Viewers can also <span id="hightlight">search looks by keywords</span> to discover new styles.
+            </p>
+            <div id="prototypePic">
+                <img class="prototype"src="alamodePrototype.png" alt="">
+            </div>
+            <a id="button" class="button" href="https://xd.adobe.com/view/6e4221f0-e941-4089-4eec-edbb7c5f6acb-1873/?fullscreen" target="_blank">View More</a>
+
+        </main>
+    </div>
+
+</body>
+<script type="text/javascript" src="submenu.js"></script>
+</html>

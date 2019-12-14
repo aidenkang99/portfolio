@@ -74,7 +74,7 @@ nav li a{
 
 #hightlight{    
     background-size: 200% auto; 
-    background-image: linear-gradient(to right,#fff 50%, #ffff00 50%);
+    background-image: linear-gradient(to right,#fff 50%, rgb(251, 255, 0) 50%);
     background-position: 0% 0;
 
     animation-name: highlight;
@@ -131,4 +131,8 @@ p{
 
 .submenu li{
     line-height: 10px;
+}
+
+.alreadyHere{
+    text-decoration-line: line-through;
 }

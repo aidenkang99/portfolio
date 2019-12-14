@@ -13,8 +13,8 @@
     <script src="jquery_library.js"></script>
 </head>
 <body>
-    <div id="title"><h3>Hi, my name is</h3><h2>Aiden<h1>Kang</h1>
-    </h1></h2></div>
+    <div id="title"><h3>Hi, my name is</h3><h2 style="font-size: 0pt;">Aiden<h1>Kang</h1>
+    </h2></div>
     <nav>
         <ul>
             <li><a href="about.html" class="sidebar">About</a></li>
@@ -29,10 +29,10 @@
     </nav>
     <main>
         <p>I am a sophomore at Tufts University studying computer science,
-            engineering psychology, and studio art.</p>
+            and architectural studies.</p>
         <p>My interests include <span id="hightlight">UX/UI design</span>, 
             <span id="hightlight">front-end engineering</span>, human-computer
-            interaction, VR/AR, full-stack engineering, and many more.</p>
+            interaction, VR/AR, and many more.</p>
         <p>I am currently looking for a summer internship.</p>
     </main>
     <div class="dumbo"><div class="frame"></div><img id="dumbo" src="dumbo.png" alt="Aiden's Profile Picture"></div>
@@ -40,4 +40,13 @@
     <div class="brush"></div>
 </body>
 <script type="text/javascript" src="submenu.js"></script>
+<script>
+    $(document).ready(function() {
+        
+        $('p').hide().delay(2000).show(2000);
+        $('.brush').hide().delay(3000).show(2000);
+        $('nav').hide().delay(3500).show(2000);
+
+    });
+</script>
 </html>

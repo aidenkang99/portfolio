@@ -2,6 +2,37 @@ main{
     position: absolute;
 }
 
+@keyframes intro{
+    from{
+        color: #fff;
+    }
+    to{
+        color: #000;
+    }
+}
+
+h3{
+    animation-name: intro;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes myName{
+    from{
+        font-size: 0pt;
+    }
+    to{
+        font-size: 94pt;
+    }
+}
+
+h2{
+    animation-name: myName;
+    animation-delay: 1.5s; 
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
 p{
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     width: 350px;

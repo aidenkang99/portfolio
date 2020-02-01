@@ -89,7 +89,7 @@ button:hover{
 p{
     margin-top: 60px;
     font-size: 15pt;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
     height: 300px;
     width: 1000px;
     color: #000;
@@ -114,24 +114,31 @@ p{
     margin-left: 600px;
 }
 
-h1{
-    font-family: 'Playfair Display SC', 'Times New Roman', Times, serif;
-    margin-top: 150px;
-
-}
-
-#content{
+#hContent, #pContent{
     display: block;
     width: 100%;
     object-fit: fill;
-    margin-top: 500px;
+}
+
+#hContent{
+    margin-top: 650px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 25pt;
+    color: #000;
+
 }
 
 #info{
     position: absolute;
     margin-left: 220px;
     margin-top: 50px;
-    font-family: serif;
-    font-size: 30pt;
-    text-align: center;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    text-align: left;
+    line-height: 20px;
 }

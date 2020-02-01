@@ -1,12 +1,12 @@
 p{
-    width: 800px;
+    width: 700px;
 }
 
 #button{
     display: block;
     border: 1px solid #000;
-    margin-left: 700px;
-    margin-top: 50px;
+    margin-left: 600px;
+    margin-top: 0px;
     margin-bottom: 150px;
     text-decoration: none;
     width: 100px;
@@ -47,37 +47,78 @@ img{
     text-align: center;
 }
 
-h4{
-    margin-top: 0px;
-    font-size: 20pt;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
+h5{
+    margin-left: 20px;
+    font-size: 12pt;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
-h2{
-    font-family: serif;
-    font-size: 40pt;
+h4{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-size: 25pt;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+h3{
+    margin-top: 200px;
 }
 
 #firstTitle{
     margin-top: 100px;
 }
 
-#secondTitle{
-    margin-top: 200px;
-}
-
-#thirdTitle{
-    margin-top: 150px;
-}
-
-#lastTitle{
-    margin-top: 200px;
+#fourthTitle{
+    margin-top: 300px;
 }
 
 h3{
-    margin-top: 0px;
-    font-size: 30pt;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
+    font-size: 40pt;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+#jobTitleIndicator{
+    position: absolute;
+    width: 0;
+    height: 30px;
+    border: 0.5px solid #000;
+}
+
+img{
+    width: 80%;
+}
+
+video{
+    width: 80%;
+}
+
+#eyeTracker{
+    width: 60%;
+}
+
+#kahootSketch{
+    width: 60%;
+    margin-bottom: 100px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+#kahootSelection{
+    margin-top: 100px;
+}
+
+#quickConvertPic{
+    margin-top: 120px;
+}
+
+#BADAsketch1{
+    width: 48%;
+}
+#BADAsketch2{
+    width: 45%;
 }

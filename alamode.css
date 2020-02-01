@@ -69,7 +69,7 @@ h2{
 }
 
 p{
-    width: 800px;
+    width: 700px;
 }
 
 .prototype{
@@ -89,6 +89,7 @@ p{
     transition-timing-function: ease-in-out;
     font-family: 'Quicksand', sans-serif;
     color: #000;
+
 
 }
 

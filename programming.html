@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Monoton|Quicksand:300|Raleway:100&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="portfolio.css">
     <link type="text/css" rel="stylesheet" href="programming.css">
+    <link href="lightbox/src/css/lightbox.css" rel="stylesheet" />
     <script src="jquery_library.js"></script>
 </head>
 <body>
@@ -28,43 +29,131 @@
     </div>
     <div id="content">
         <main>
-            <h2>Programming Projects</h2>
-            <h3 id="firstTitle">The Boston Art Dealers Association Website</h3>
-           <p>
-                For a group project in Web Programming class, we redesigned the website of the Boston Art Dealers Association (BADA).<br \><br \>
-                I recognized that the current website of BADA is not very modern, and considering that the main audience of the website would be an art enthusiast, I realized that redesigning their website would be an interesting project.<br \><br \>
-                As a lead designer and a front-end developer, I <span id="hightlight">designed the look and feel</span> of the entire website and the <span id="hightlight">information architecture</span> of the website.<br \><br \>
-                I also successfully <span id="hightlight">implemented a 3D carousel</span> for the gallery page using CSS 3D, JavaScript, and jQuery animation that made the website much sleeker and more professional.
-           </p>
-           <h4>Images from the Website</h4>
-           <div id="BADA">
-               <img src="BADAhomepage.png" alt="">
-               <img src="BADAgallery.png" alt="">
-            </div>
-           <a id="button" class="button" href="https://hshih02.github.io/20midterm/index.html" target="_blank">View Project</a>
-           <h3 id="secondTitle">Immersive Art Experience</h3>
-           <p>
-                As an individual project, I am creating a program where users can <span id="hightlight">explore art exhibitions simply through eyegaze</span>.<br \><br \>
-                Most art gallery websites only allow users to click their art to access the information, so they fail to offer <span id="hightlight">immersive experiences</span>.<br \><br \>
-                I think allowing users to view different artworks only by gazing at different directions can not only allow new interactions with online galleries but also give new opportunities for users who cannot use their limbs.<br \><br \>
-                I am implementing this program with Webgazer.js, jQuery, HTML, CSS, and JavaScript.
-           </p>
-           <h3 id="thirdTitle">Aiden's Music Chart</h3>
-           <p>
-                As an individual project in Web Programming class, I created a website where users can <span id="hightlight">search relevant songs by querying keywords</span>, name of artists, or any other information.<br \><br \>
-                I implemented this program by using jQuery, HTML, CSS, and JavaScript and successfully connecting my program with <span id="hightlight">Deezer API</span>.
-           </p>
-           <div id="musicChart"><img src="musicChart.png" alt=""></div>
-           <a id="button" class="button" href="https://aidenkang99.github.io/musicchart/home.html" target="_blank">View Project</a>
-           <h3 id="lastTitle">The Grep</h3>
-           <p>
-                As a final project for Data Structures class, I designed and built a program that <span id="hightlight">efficiently indexes all words in files within a directory</span>.<br \><br \>
-                I used <span id="hightlight">a dynamic hash table of linked lists in C++</span> to handle search queries much faster than the reference implementation made by the course TA.<br \><br \>
-                I am happy to talk about these projects if you need more information.
-           </p>
+            <h3 id="firstTitle">Futuristic Kahoot</h3>
+            <div id="jobTitleIndicator"></div><h5>Full Stack Engineer</h5>
+            <h4>UX Design</h4>
+
+            <p>
+                As user-centered design is getting more recognition, one of the greatest focus of UX Design these days would be <span id="hightlight">accessibility</span>.
+                “Futuristic Kahoot” is one of my main projects that I aim for a better accessbility. 
+            </p>
+            <img id="kahootGif" src="kahoot.gif" alt="">
+            <p>
+                Kahoot is a game-based learning system that allows users to take quizzes or polls online.
+                The current version of Kahoot makes users to click an option to respond to questions.<br \><br \>
+                I have always enjoyed using this system, and I imagined how I can improve Kahoot by making it more accessible to a wider range of users.
+            </p>
+            <a href="https://webgazer.cs.brown.edu/" target="_blank"><img id="eyeTracker" src="eyetracker.png"></a>
+            <p>
+                I came up with an alternative solution by using Webgazer.js library that <span id="hightlight">uses common webcams to infer the eye-gaze locations of web visitors on a page in real time</span>.<br \><br \>
+                According to this solution, users are not expected to click anything to select an option while using Kahoot. They just stare at an option they wish to select for a few seconds.
+            </p>
+
+            <a href="lightbox/dist/images/kahootSketch.jpeg" data-lightbox="kahootSketch" data-title="Futuristic Kahoot UI Sketch"><img class="center" id="kahootSketch" src="lightbox/dist/images/kahootSketch.jpeg" alt=""></a>
+            <p>
+                After making an initial sketch of our product, I did <span id="hightlight">a walkthrough with other engineers and decided to add a scoring functionality and a comment board</span>.<br \><br \>
+                We believed that this will give users a better understanding of our program and any directions.
+            </p>
+
+            <h4>Implementation</h4>
+            <p>
+                I mainly worked on the <span id="hightlight">calibration</span> functionality. Because the Webgazer library uses the webcam in the user’s device, the computed eye-gaze locations are not precise.<br \><br \>
+                Therefore, we added a calibration page that automatically transitions into our main game page after making the system more adjusted to the user’s environment.<br \><br \>
+                I built the calibration functionality with jQuery library that automatically triggers each calibration event after one another to not burden users with too many tasks at one time.
+            </p>
+            <a id="button" class="button" href="https://aidenkang99.github.io/futuristicKahoot/" target="_blank">View Project</a>
+            <a href="lightbox/dist/images/kahootSelection.png" data-lightbox="kahootSelection" data-title="Computing User's Eye Gaze Data Using Webgazer.js"><img id="kahootSelection" src="lightbox/dist/images/kahootSelection.png" alt=""></a>
+
+            <p>
+                I also worked on <span id="hightlight">eye-gaze selection logic</span>. To compute the eye-gaze location, we took the value of the center of the window, and based on that value, we make our program dynamically divide the window into four quadrants that each represent one answer choice.<br /><br />
+                Because users can resize the window anytime, we figured that this is a better solution than setting static values to represent each quadrant.        
+            </p>
+
+            <video src="kahootVideoFinal.mp4" controls></video>
+            <p>
+                Besides the calibration functionality and eye-gaze selection logic, I <span id="hightlight">created a timer widget</span> that triggers a change in the comment board when a certain amount of time has expired.
+            </p>
+
+            <h3 id="secondTitle">Lightweight Currency Converter</h3>
+            <div id="jobTitleIndicator"></div><h5>Web Application Engineer</h5>
+            <h4>UX Design</h4>
+
+            <p>
+                The problem of most pre-existing currency converters on the market is that they are <span id="hightlight">flooded with extra information</span> as shown in the picture below.
+                Thus, users often need unnecessarily long time to identify their tasks and perform what they are expected to do. 
+            </p>
+            <a href="https://www.xe.com/currencyconverter/" target="_blank"><img src="marketResearch.png" alt=""></a>
+            <p>
+                I <span id="hightlight">designed a lightweight solution</span> that enables users to quickly convert currencies or view any changes in exchange rates in a graph.<br /><br />
+                To automate task of setting the default currency, we parse the IP address of the user and sets the default currency in the dropdown list based on that data.
+            </p>
+            <img src="ipIllust.png" alt="">
+            <p>
+                Because this product carries out functionalities that are related to finance, I believe it is important for the interface to <span id="hightlight">convey an emotion of security, trust, and dependability</span>.<br /><br />
+                Based on this reason, I chose the color of navy and white as the main UI colors. 
+            </p>
+            <h4>Implementation</h4>
+            <p>
+                Our team implemented the exchange rate graph that operates based on user requests using JavaScript, Chart.js, FetchAPI, ES6, and ExchangeRatesAPI.<br /><br />
+                We also built the <span id="hightlight">currency recommendation functionality by parsing user's IP address</span> using JavaScript, jQuery, XML, and JSON.
+            </p>
+            <a id="button" class="button" href="https://hshih02.github.io/xmoney/">View Project</a>
+            
+            <a href="lightbox/dist/images/quickConvert.png" data-lightbox="quickConvert" data-title="Quick Convert Using FetchAPI"><img id="quickConvertPic" src="lightbox/dist/images/quickConvert.png" alt=""></a>
+            <a href="lightbox/dist/images/graphing.png" data-lightbox="graphing" data-title="Exchange Rate Graph Using ExchangeRatesAPI"><img src="lightbox/dist/images/graphing.png" alt=""></a>
+
+            <a href="https://hshih02.github.io/xmoney/" target="_blank"><img src="graphing.png" alt=""></a>
+
+            <h3 id="thirdTitle">BADA Website Redesign</h3>
+            <div id="jobTitleIndicator"></div><h5>Front-End Developer</h5>
+            <h4>UX Design</h4>
+
+            <p>
+                The current website of the Boston Art Dealers Association (BADA) does not fit to the contemporary style standards.<br /><br />
+                Considering that the main users of the website would be art enthusiasts who are sensitive to styles and aesthetics, I realized that redesigning their website would <span id="hightlight">make the users’ experience more pleasurable</span>.
+            </p>
+
+            <a href="lightbox/dist/images/BADAsketch1.png" data-lightbox="BADAsketch1" data-title="BADA UI Sketch"><img id="BADAsketch1" src="lightbox/dist/images/BADAsketch1.png" alt=""></a>
+            <a href="lightbox/dist/images/BADAsketch2.png" data-lightbox="BADAsketch2" data-title="BADA UI Sketch"><img id="BADAsketch2" src="lightbox/dist/images/BADAsketch2.png" alt=""></a>
+
+
+            <p>
+                To achieve the purpose of redesign, which is to make the website more fit to contemporary style standards, I focused on making the gallery page <span id="hightlight">more modernistic and visually interesting</span>.<br /><br />
+                I also designed the motion of the homepage image and the carousel of gallery images to be elegant and smooth to give a more professional feeling to the webiste.
+            </p>
+
+            <h4>Implementation</h4>
+            <p>
+                After implementing the backbone of the website with HTML and CSS, I <span id="hightlight">changed the gallery to be three-dimensional</span>.<br /><br />
+                In order to do so, I <span id="hightlight">successfully implemented a 3D carousel</span> for the gallery page using CSS 3D, JavaScript, and jQuery animation that made the website much sleeker and more professional.
+            </p>
+
+            <!--explanation video-->
+            <a id="button" class="button" href="https://hshih02.github.io/BADA/" target="_blank">View Project</a>
+
+
+            <h3 id="fourthTitle">Aiden's Music Chart</h3>
+            <div id="jobTitleIndicator"></div><h5>Front-End Engineer</h5>
+            <p>
+                I created a website where users can search relevant songs by querying any keywords (song name, artist, etc.).<br \><br \>
+                To give a minimalistic look and feel, I only used black and white. Also, I styled the website to look like <span id="hightlight">a retro radio screen</span>, which makes the motion of the query results very interesting and even quite nostalgic.
+            </p>
+
+            <video src="musicChartVideoFinal.mp4" controls></video>
+
+            <p>
+                I implemented this program by using jQuery, HTML, CSS, and JavaScript and <span id="hightlight">successfully integrated my program with Deezer API</span>.
+            </p>
+            <a id="button" class="button" href="https://aidenkang99.github.io/musicchart/home.html" target="_blank">View Project</a>
         </main>
     </div>
-
+    <script src="lightbox/src/js/lightbox.js"></script>
 </body>
 <script type="text/javascript" src="submenu.js"></script>
+<script>
+    lightbox.option({
+        'fitImagesInViewport': false,
+        'maxWidth': 1000
+    })
+</script>
 </html>

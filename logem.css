@@ -59,6 +59,33 @@ h2{
     text-align: center;
 }
 
+#rothkoPic{
+    text-align:center;
+    margin-bottom: 90px;
+}
+
+#rothko{
+    width: 80%;
+}
+
+#instagramPic{
+    text-align:left;
+    margin-bottom: 90px;
+}
+
+#instagram{
+    width: 80%;
+}
+
+#empaticaPic{
+    text-align:center;
+    margin-bottom: 90px;
+}
+
+#empatica{
+    width: 70%;
+}
+
 #card, #interview, #map{
     width: 80%;
     margin-bottom: 100px;
